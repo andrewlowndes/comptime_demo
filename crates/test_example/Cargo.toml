@@ -1,0 +1,11 @@
+[package]
+name = "test_example"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+test_lib = { path = "../test_lib" }
+test_types = { path = "../test_types" }
+
+# Custom branch to allow the code to work correctly
+comptime = { git = "https://github.com/andrewlowndes/comptime-rs" }

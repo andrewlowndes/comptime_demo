@@ -1,0 +1,13 @@
+[package]
+name = "test_lib"
+version = "0.1.0"
+edition = "2021"
+
+[lib]
+# Just a plain old lib here, no proc_macro
+
+[dependencies]
+proc-macro2 = "1.0.67"
+quote = "1.0.33"
+strum = { version = "0.25.0", features = ["derive"] }
+syn = "2.0.37"
